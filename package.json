@@ -4,9 +4,7 @@
     "express": "^4.19.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build", 
-    "build:azure": "react-scripts build"
+    "build": "parcel build index.html --out-dir dist"
   }
-  
 }
+
