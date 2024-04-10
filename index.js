@@ -1,11 +1,15 @@
 //create cars api using express
 const express = require('express');
+const cors=require('cors');
+
+
 const app = express();
 
 
 
 app.use(express.json());
 
+app.use(cors());
 const cars = require('./cars.json');
 
 //get all cars
@@ -47,6 +51,6 @@ app.post('/cars', (req, res) => {
 });
 
 //start app at localhost:3001
-app.listen(3001, () => {
+app.listen(4000, () => {
     console.log('Server started at http://localhost:3001');
 });
